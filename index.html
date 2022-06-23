@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fm.css">
+    <script type="text/javascript" src="f.js"></script>
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Formulário</h1>
+            <p id="descricao" class="descricaocenter">
+                Sejam bem-vindos(a) a este formulário.
+            </p>
+        </header>
+        <form id="pesqform">
+            <div class="form-group">
+                <label id="nmfor" for="nome">NOME</label>
+                <input type="text" name="Nome" id="nmfor" class="form-control" placeholder="Digite seu nome" required>
+            </div>
+            <div class="form-group">
+                <label id="email" for="email">EMAIL</label>
+                <input type="email" name="Email" id="email" class="form-control" placeholder="Digite seu Email" required>
+            </div>
+            <div class="form-group">
+                <label id="numero" for="numero">Idade <span class="clue"> (Opcional) </span></label>
+                <input type="number" name="Idade" id="numero" min="10" max="99" class="form-control" placeholder="Idade">
+            </div>
+            <div class="form-group">
+                <p>Quais dessas áreas você domina?</p>
+                <label>
+                 <input name="Usuário recomenda" value="programador web" type="radio" class="input-radio" checked> Programador Web
+                </label>
+                <label>
+                 <input name="Usuário recomenda" value="programador desktop" type="radio" class="input-radio" checked> Programador Desktop
+                </label>
+                <label>
+                 <input name="Usuário recomenda" value="proggramador mobile" type="radio" class="input-radio" checked> Programador Mobile
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Qual sua Linguagem preferida?</p>
+                <select name="ling" id="ling" class="form-controk" required>
+                    <option disabled selected value>Selecione sua opção</option>
+                    <option value="js">Java Script</option>
+                    <option value="js">PHP</option>
+                    <option value="js">C#</option>
+                    <option value="js">C++</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Em qual dessas áreas você mais domina?
+                    <!-- <span class="clue">(Marque em qual você se encaixa.)</span> -->
+                </p>
+                <label>
+                    <input name="escolha" value="Front-end" type="checkbox" class="input-checkbox"> Front-End
+                </label>
+                <label>
+                    <input name="escolha" value="Back-End" type="checkbox" class="input-checkbox"> Back-End
+                </label>
+                <label>
+                    <input name="escolha" value="Full-stack" type="checkbox" class="input-checkbox"> Full-Stack
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Fale mais sobre sua primeira experiência como programador?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Comente"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                  Envie.
+                </button>
+        </form>
+        </div>
+</body>
+
+</html>
